@@ -5,9 +5,9 @@ print(sys.argv)
 def say_hello(name):
     print("hello {}, the data scientist".format(name))
 
-say_hello("ketan")
+#say_hello("ketan")
 
-print('Numbers')
+#print('Numbers')
 
 
 def two(x,y):
@@ -19,6 +19,12 @@ def two(x,y):
 x= sys.argv[1] 
 y = sys.argv[2] 
 
-two(x,y)
+#two(x,y)
 
+if __name__ == "__main__":
+    args = sys.argv
+    # args[0] = current file
+    # args[1] = function name
+    # args[2:] = function args : (*unpacked)
+    globals()[args[1]](*args[2:])
 
