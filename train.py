@@ -16,8 +16,8 @@ def two(x,y):
     d = int(x) + int(y)
     print(d)
 
-x= sys.argv[1] 
-y = sys.argv[2] 
+#x= sys.argv[1] 
+#y = sys.argv[2] 
 
 #two(x,y)
 
